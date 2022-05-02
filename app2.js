@@ -5,6 +5,8 @@ const fetch = require("node-fetch");
 
 const app = express();
 
+const PORT = process.env.port || 3200;
+
 const publicDirectoryPath = path.join(__dirname, "./public");
 
 const viewDirectoryPath = path.join(__dirname, "./templates/views");
@@ -86,6 +88,6 @@ app.get("*", (req, res) => {
   res.send("Please check URL");
 });
 
-app.listen(3200, () => {
-  console.log("Server2 is up and running on port 3200");
+app.listen(PORT, () => {
+  console.log("Server2 is up and running on port " + PORT);
 });
