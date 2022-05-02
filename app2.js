@@ -25,7 +25,7 @@ app.get("", (req, res) => {
   console.log("Inside home");
   res.render("index", {
     title: "my first page",
-    designer: "rajeev parmar",
+    designer: "rajeev parmar 2",
   });
 });
 
